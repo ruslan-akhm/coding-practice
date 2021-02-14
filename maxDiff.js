@@ -12,9 +12,8 @@
 // Explanation : The maximum difference is between 9 and 7.
 
 function maxDIff(arr) {
-  //splice array at max element
   let max = Math.max(...arr);
-  arr.splice(arr.indexOf(Math.max(...arr)) + 1);
+  arr.splice(arr.indexOf(max) + 1);
   let min = Math.min(...arr);
   return max - min;
 }
