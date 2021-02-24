@@ -1,4 +1,4 @@
-//find Fibonacci series of N numbers
+//print out Fibonacci series of N numbers
 
 //for loop
 function findFibonacci(num) {
