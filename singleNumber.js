@@ -30,3 +30,13 @@ const singleNumber = arr => {
 };
 
 console.log(singleNumber([4, 1, 2, 1, 2]));
+
+const singleNumberXOR = arr => {
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    result ^= arr[i];
+  }
+  return result;
+};
+
+console.log(singleNumberXOR([4, 1, 2, 1, 2]));
