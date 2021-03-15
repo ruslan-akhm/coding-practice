@@ -8,11 +8,13 @@
 function overlappingIntervals(interval) {
   let newInterval = [];
 
+  interval.sort((a, b) => {
+    return a[0] - b[0];
+  });
+
   newInterval[0] = interval[0];
 
   for (let i = 1; i < interval.length; i++) {
-    console.log(i);
-    console.log(newInterval);
     if (interval[i][0] <= newInterval[newInterval.length - 1][1]) {
       newInterval[newInterval.length - 1] = [
         newInterval[newInterval.length - 1][0],
