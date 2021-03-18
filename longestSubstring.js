@@ -7,6 +7,7 @@
 // Explanation: The answer is "abc", with the length of 3.
 
 const longestSubstring = s => {
+  if (s.length === 0) return 0;
   let hash = {};
 
   for (let i = 0; i < s.length; i++) {
